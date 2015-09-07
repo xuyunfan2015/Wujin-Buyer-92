@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProductDetailView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2sd-O6-YTh">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gX3-0A-eOc">
+                    <rect key="frame" x="20" y="159" width="280" height="250"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQ3-Kx-Jv1">
+                            <rect key="frame" x="250" y="5" width="25" height="25"/>
+                            <state key="normal" backgroundImage="cha">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="closeAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="jYi-c8-rrU"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DXk-TI-hgP" customClass="WTURLImageView">
+                            <rect key="frame" x="90" y="37" width="100" height="100"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lj6-Nf-9Y0">
+                            <rect key="frame" x="8" y="210" width="25" height="25"/>
+                            <state key="normal" backgroundImage="shop_car_num_minus">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="subAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="QEW-u5-bsT"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3j-Tk-aCm">
+                            <rect key="frame" x="66" y="210" width="25" height="25"/>
+                            <state key="normal" backgroundImage="shop_car_num_add">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="addAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="V8P-dd-rvE"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qbg-Cc-UFY">
+                            <rect key="frame" x="36" y="213" width="25" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fed-he-val">
+                            <rect key="frame" x="166" y="208" width="106" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="加入购物车" backgroundImage="button_yellowBackground">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="addToCarAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="gSQ-k3-ek0"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOQ-Xh-Q2S">
+                            <rect key="frame" x="47" y="145" width="186" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="￥3.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHI-k4-iik">
+                            <rect key="frame" x="47" y="170" width="186" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.95294117649999999" green="0.18173021789999999" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0UN-0E-M5O">
+                            <rect key="frame" x="0.0" y="195" width="280" height="1"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="j7r-3x-lzw"/>
+                        <constraint firstAttribute="width" constant="280" id="u2O-9t-zEi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="gX3-0A-eOc" secondAttribute="centerY" id="8EK-JV-Tfl"/>
+                <constraint firstItem="2sd-O6-YTh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MdF-r8-5nY"/>
+                <constraint firstAttribute="centerX" secondItem="gX3-0A-eOc" secondAttribute="centerX" id="Qp7-3b-AGm"/>
+                <constraint firstAttribute="bottom" secondItem="2sd-O6-YTh" secondAttribute="bottom" id="Yh2-0K-P6S"/>
+                <constraint firstAttribute="trailing" secondItem="2sd-O6-YTh" secondAttribute="trailing" id="jgA-FL-bpu"/>
+                <constraint firstItem="2sd-O6-YTh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jrT-78-w3n"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backView" destination="2sd-O6-YTh" id="40b-Bj-HRd"/>
+                <outlet property="imageView" destination="DXk-TI-hgP" id="UwO-Uh-gDH"/>
+                <outlet property="nameLabel" destination="wOQ-Xh-Q2S" id="z2l-do-NcM"/>
+                <outlet property="numberField" destination="qbg-Cc-UFY" id="Dj3-m5-N58"/>
+                <outlet property="priceLabel" destination="YHI-k4-iik" id="8fd-R0-PRG"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="button_yellowBackground" width="270" height="71"/>
+        <image name="cha" width="30" height="30"/>
+        <image name="shop_car_num_add" width="40" height="40"/>
+        <image name="shop_car_num_minus" width="40" height="40"/>
+    </resources>
+</document>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CarHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="361" height="66"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="嘉兴五金市场" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="318" translatesAutoresizingMaskIntoConstraints="NO" id="sOX-FH-Isc">
+                    <rect key="frame" x="16" y="23" width="250" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="6Zb-Jy-dZ4"/>
+                        <constraint firstAttribute="width" constant="250" id="y5u-cl-mzt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKn-Gg-TBv" customClass="SelectButton">
+                    <rect key="frame" x="0.0" y="10" width="36" height="36"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" none="YES"/>
+                    </accessibility>
+                    <state key="normal" image="coin4">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1m-kp-k4H">
+                    <rect key="frame" x="322" y="18" width="30" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="s5T-qs-idk"/>
+                        <constraint firstAttribute="width" constant="30" id="t6K-PS-AAo"/>
+                    </constraints>
+                    <state key="normal" image="message" backgroundImage="coin8">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="messageAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="k1s-Hp-BYu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGi-Ia-fv6">
+                    <rect key="frame" x="284" y="18" width="30" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="BSv-pR-ZIf"/>
+                        <constraint firstAttribute="width" constant="30" id="fOz-48-snU"/>
+                    </constraints>
+                    <state key="normal" image="phone_rect" backgroundImage="coin8">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="telAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="do0-tQ-l6P"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jHn-wf-GQF">
+                    <rect key="frame" x="0.0" y="65" width="361" height="1"/>
+                    <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="pMI-SE-vL0"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDo-yt-zDl">
+                    <rect key="frame" x="0.0" y="0.0" width="361" height="66"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="goShopAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="l4s-LD-RLw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jDo-yt-zDl" secondAttribute="trailing" id="Bwr-CF-Hf4"/>
+                <constraint firstAttribute="bottom" secondItem="jHn-wf-GQF" secondAttribute="bottom" id="K9z-9c-BIh"/>
+                <constraint firstAttribute="trailing" secondItem="jHn-wf-GQF" secondAttribute="trailing" id="XJ0-yQ-8G6"/>
+                <constraint firstItem="jDo-yt-zDl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="doS-l0-u46"/>
+                <constraint firstAttribute="trailing" secondItem="Y1m-kp-k4H" secondAttribute="trailing" constant="9" id="gJe-SI-jsQ"/>
+                <constraint firstItem="Y1m-kp-k4H" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="hB1-vi-aBy"/>
+                <constraint firstItem="sOX-FH-Isc" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="klh-ST-TuT"/>
+                <constraint firstItem="sOX-FH-Isc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="nHL-UI-bBA"/>
+                <constraint firstItem="jDo-yt-zDl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qsV-SY-krH"/>
+                <constraint firstItem="HGi-Ia-fv6" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="r84-ZA-1Yh"/>
+                <constraint firstAttribute="trailing" secondItem="HGi-Ia-fv6" secondAttribute="trailing" constant="47" id="rfN-MA-57s"/>
+                <constraint firstAttribute="bottom" secondItem="jDo-yt-zDl" secondAttribute="bottom" id="tau-Oa-JqJ"/>
+                <constraint firstItem="jHn-wf-GQF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wlz-ih-bCq"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="msgButton" destination="Y1m-kp-k4H" id="Zt3-6b-Z8Q"/>
+                <outlet property="nameLabel" destination="sOX-FH-Isc" id="vBV-j6-Hg7"/>
+                <outlet property="selectButton" destination="yKn-Gg-TBv" id="YFz-OO-6cb"/>
+                <outlet property="telButton" destination="HGi-Ia-fv6" id="FcO-L3-vVi"/>
+                <outlet property="upLine" destination="jHn-wf-GQF" id="STI-9P-plS"/>
+            </connections>
+            <point key="canvasLocation" x="382.5" y="152"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="coin4" width="19" height="19"/>
+        <image name="coin8" width="73" height="29"/>
+        <image name="message" width="74" height="74"/>
+        <image name="phone_rect" width="51" height="47"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

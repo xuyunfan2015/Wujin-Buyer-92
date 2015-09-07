@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BottomView">
+            <rect key="frame" x="0.0" y="5" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g3k-Ih-fbZ">
+                    <rect key="frame" x="0.0" y="15" width="320" height="35"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="总计:￥0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puR-WC-cSn">
+                            <rect key="frame" x="42" y="7" width="175" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.95294117649999999" green="0.19072468591971944" blue="0.22071144707960805" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17d-3a-ivm">
+                            <rect key="frame" x="243" y="6" width="69" height="24"/>
+                            <color key="backgroundColor" red="0.95294117649999999" green="0.18173021789999999" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="还差300.0元">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="jsButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="TI2-Px-V4C"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nlW-Rh-fgD">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                            <color key="backgroundColor" red="0.73462634048257369" green="0.73462634048257369" blue="0.73462634048257369" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95438170241286868" green="0.93449111186712186" blue="0.94565970084408557" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="DiU-HZ-QpS"/>
+                        <constraint firstAttribute="height" constant="35" id="c7w-gQ-2rK"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0D7-Tc-IRp">
+                    <rect key="frame" x="9" y="0.0" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="NyC-x8-gb0"/>
+                        <constraint firstAttribute="width" constant="30" id="Ovy-0m-1WI"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="shop_car_icon_red">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="carAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="OeL-fr-LOS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="g3k-Ih-fbZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LNM-9A-hX8"/>
+                <constraint firstAttribute="bottom" secondItem="g3k-Ih-fbZ" secondAttribute="bottom" id="jhk-ix-QuN"/>
+                <constraint firstAttribute="bottom" secondItem="0D7-Tc-IRp" secondAttribute="bottom" constant="20" id="ltc-SB-jGq"/>
+                <constraint firstItem="0D7-Tc-IRp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="9" id="mIM-Uk-UcN"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="carButton" destination="0D7-Tc-IRp" id="MNb-ob-XrJ"/>
+                <outlet property="checkButton" destination="17d-3a-ivm" id="gPj-CQ-ouM"/>
+                <outlet property="totalLabal" destination="puR-WC-cSn" id="Zve-3T-b0F"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="275"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="shop_car_icon_red" width="200" height="200"/>
+    </resources>
+</document>
